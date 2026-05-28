@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vite *)",
+      "Bash(npx electron-builder *)",
+      "WebFetch(domain:capyplayer.feifeiduck.cn)",
+      "WebSearch",
+      "Bash(npm run *)",
+      "Bash(taskkill /F /IM EyPlayer.exe)",
+      "Bash(npm install *)",
+      "Bash(node -e ' *)",
+      "Bash(tasklist)",
+      "Bash(taskkill /F /PID 13488 /PID 6560 /PID 13192 /PID 12128)",
+      "Bash(cmd.exe /c \"taskkill /F /IM EyPlayer.exe\")",
+      "Bash(rm -rf release/win-unpacked)",
+      "Bash(rm -f \"release/EyPlayer Setup 0.1.0.exe\")",
+      "Bash(rm -f \"release/EyPlayer Setup 0.1.0.exe.blockmap\")",
+      "Bash(cmd.exe /c \"rd /s /q E:\\\\\\\\EyPlayer\\\\\\\\release\\\\\\\\win-unpacked\")",
+      "Bash(cmd.exe /c \"taskkill /F /PID 10204 /PID 11384 /PID 13776 /PID 10784\")",
+      "Bash(powershell -Command \"Get-Process -Name EyPlayer | Stop-Process -Force\")",
+      "Bash(powershell -Command \"Get-Process -Name EyPlayer -ErrorAction SilentlyContinue | Stop-Process -Force\")"
+    ]
+  }
+}

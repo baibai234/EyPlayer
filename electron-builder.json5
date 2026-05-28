@@ -1,0 +1,36 @@
+{
+  "appId": "com.eyplayer.app",
+  "productName": "EyPlayer",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "resources/**/*",
+    "!**/node_modules/**/{test,__tests__,tests,powered-test,example,examples}",
+    "!**/node_modules/.cache/**"
+  ],
+  "win": {
+    "icon": "resources/icon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "${productName} Setup ${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "EyPlayer",
+    "installerIcon": "resources/icon.ico",
+    "uninstallerIcon": "resources/icon.ico",
+    "installerHeaderIcon": "resources/icon.ico"
+  },
+  "asar": true
+}
